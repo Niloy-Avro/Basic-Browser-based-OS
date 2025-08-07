@@ -25,7 +25,7 @@ html, body {
 .desktop {
     height: 100%;
     width: 100%;
-    background-image: url(./img/img.jpg);
+    background-image: url(img/img.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -479,5 +479,6 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
 
