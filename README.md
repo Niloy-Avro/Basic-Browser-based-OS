@@ -37,8 +37,3 @@
 - HTML5
 - CSS3 (Flexbox, Grid, Animation)
 - JavaScript (Vanilla)
-
----
-
-## 📁 Folder Structure
-
