@@ -67,19 +67,10 @@ html, body {
     font-size: 14px;
     font-family: "Gilroy1";
     cursor: default;
-}
-.desktop #icon-browser p {
-    position: absolute;
-    left: 0.29vw;
-}
-.desktop #icon-calc p {
-    position: absolute;
-    left: -0.7vw;
-}
-.desktop #icon-vscode p {
-    position: absolute;
-    top: 6.9vh;
-    left: -0.4vw;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    white-space: nowrap;
 }
 .desktop #top-box {
     font-family: "Gilroy";
@@ -479,6 +470,7 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
 
 
