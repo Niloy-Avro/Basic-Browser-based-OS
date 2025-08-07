@@ -33,10 +33,13 @@ html, body {
     overflow: hidden;
     user-select: none;
 }
-.desktop .icon {
-    height: 8vh;
-    width: 8vh;
-    position: absolute;
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    margin: 20px;
+    cursor: pointer;
 }
 .desktop #icon-mypc {
     height: auto;
@@ -470,6 +473,7 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
 
 
