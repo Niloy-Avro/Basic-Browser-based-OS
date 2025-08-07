@@ -27,7 +27,7 @@ html, body {
 .desktop {
     height: 100%;
     width: 100%;
-    background-image: url(./img/img.jpg);
+    background-image: url(img/img.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -628,4 +628,5 @@ button:hover {
     height: 36px;
     font-size: 17px;
   }
+
 }
