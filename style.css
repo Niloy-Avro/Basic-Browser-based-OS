@@ -14,7 +14,7 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy1";
-    src: url(./Fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
+    src: url(Fonts/Gilroy-Light.ttf) format('truetype');
 }
 
 /* Browser Window */
@@ -630,4 +630,5 @@ button:hover {
   }
 
 }
+
 
