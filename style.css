@@ -78,7 +78,7 @@ html, body {
 }
 .desktop #icon-vscode p {
     position: absolute;
-    top: 6.9vh;
+    top: 5vh;
     left: -0.4vw;
 }
 .desktop #top-box {
@@ -479,6 +479,7 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
 
 
