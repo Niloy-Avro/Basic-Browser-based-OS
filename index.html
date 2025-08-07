@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Browser Based OS</title>
+</head>
+<body>
+    <div id="browser-window">
+        <div class="desktop" id="desktop">
+            <div class="icon" id="icon-mypc">
+                <img width="40" height="40" src="https://img.icons8.com/office/40/monitor.png" alt="monitor"/>
+                <p>My PC</p>
+            </div>
+            <div class="icon" id="icon-vscode">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="visual-studio-code-2019"/><p>VS Code</p>
+            </div>
+            <div class="icon" id="icon-calc">
+                <img width="50" height="50" src="https://img.icons8.com/fluency/50/calculator.png" alt="calculator"><p>Calculator</p>
+            </div>
+            <div class="icon" id="icon-browser">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/brave-web-browser.png" alt="brave-web-browser"/><p>Brave</p>
+            </div>
+            <div class="top-box" id="top-box">
+                <div id="time">🕛 Loading...</div>
+                <div id="date">📆 Loading...</div>
+                <div id="weather">🌡 Loading...</div>
+            </div>
+            <div class="taskbar" id="taskbar">
+                <div id="task-left">
+                    <img src="https://img.icons8.com/fluency/50/windows-11.png" alt="windows-11" />
+                    <img src="https://img.icons8.com/fluency/50/calculator.png" alt="calculator" id="icon-calc2"/>
+                    <img src="https://img.icons8.com/color/48/brave-web-browser.png" alt="brave-web-browser" id="icon-browser2" />
+                </div>
+                <div id="task-right">
+                    <img src="https://img.icons8.com/windows/50/wifi.png" alt="wifi" />
+                    <img src="https://img.icons8.com/fluency/50/high-battery.png" alt="battery" />
+                </div>
+            </div>
+        </div>
+        <div class="app-window" id="mypc">
+            <div id="app-header">
+                <span id="header-name">My PC</span>
+                <button id="cross"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/multiply.png" alt="multiply"/></button>
+            </div>
+            <div id="app-body">
+                <div class="icon" id="c-drive"><img width="96" height="96" src="https://img.icons8.com/color/96/c-drive.png" alt="c-drive"/></div>
+                <div class="icon" id="d-drive"><img width="96" height="96" src="https://img.icons8.com/color/96/c-drive.png" alt="c-drive"/></div>
+                <div class="icon" id="usb"><img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/usb-memory-stick.png" alt="usb-memory-stick"/>
+                </div>
+            </div>
+        </div>
+        <div class="app-window" id="browser">
+            <div id="browser-header">
+                <span id="browserHeader-name">Brave</span>
+                <button id="browser-cross"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/multiply.png" alt="multiply"/></button>
+            </div>
+            <div id="page-heading">
+                <h1><a href="https://brave.com/" target="_main">welcome to brave</a></h1>
+            </div>
+            <div id="browser-body">
+                <div id="search-bar">
+                    <input type="text" id="search-input" placeholder="Enter here">
+                    <div id="newbtn">
+                        <a href="#" id="search-link">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-window" id="calculator">
+            <div id="calc-header">
+                <span id="calacHeader-name">Calculator</span>
+                <button id="calc-cross"><img width="50" height="50" src="https://img.icons8.com/material-rounded/50/multiply--v1.png" alt="multiply"/></button>
+            </div>
+            <div id="calc-body">
+                <input type="text" placeholder="0" id="input">
+                <div id="row1" class="row">
+                    <button class="btn" id="op1" style="font-size:16px">AC</button>
+                    <button class="btn" id="op2" style="font-size:16px">DEL</button>
+                    <button class="btn" id="op3">%</button>
+                    <button class="btn" id="op4">/</button>
+                </div>
+                <div id="row2" class="row">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn" id="op5">x</button>
+                </div>
+                <div id="row3" class="row">
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn" id="op6">-</button>
+                </div>
+                <div id="row4" class="row">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn" id="op7">+</button>
+                </div>
+                <div id="row5" class="row">
+                    <button class="btn">00</button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button class="btn" id="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
