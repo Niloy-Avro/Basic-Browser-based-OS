@@ -64,7 +64,7 @@ html, body {
 }
 .desktop p {
     color: #fff;
-    font-size: 1px;
+    font-size: 1rem;
     font-family: "Gilroy1";
     cursor: default;
 }
@@ -479,6 +479,7 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
 
 
