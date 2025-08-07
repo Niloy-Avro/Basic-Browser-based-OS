@@ -10,7 +10,7 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(./Fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
+    src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
 }
 @font-face {
     font-family: "Gilroy1";
@@ -630,3 +630,4 @@ button:hover {
   }
 
 }
+
