@@ -9,11 +9,11 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
+    src: url(./Fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
 }
 @font-face {
     font-family: "Gilroy1";
-    src: url(Fonts/Gilroy-Light.ttf) format('truetype');
+    src: url(./Fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
 }
 /* Browser Window */
 #browser-window {
@@ -22,6 +22,17 @@ html, body {
 }
 
 /* MAIN-DESKTOP */
+.desktop {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
 .desktop .icon {
     height: 8vh;
     width: 8vh;
@@ -53,7 +64,7 @@ html, body {
 }
 .desktop p {
     color: #fff;
-    font-size: 1px;
+    font-size: 14px;
     font-family: "Gilroy1";
     cursor: default;
 }
@@ -468,8 +479,3 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
-
-
-
-
-
