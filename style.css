@@ -9,7 +9,7 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(./Fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
+    src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
 }
 @font-face {
     font-family: "Gilroy1";
@@ -479,4 +479,5 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
+
 
