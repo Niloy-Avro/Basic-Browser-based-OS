@@ -1,4 +1,3 @@
-/* GLOBAL RESET & FONTS */
 * {
     margin: 0;
     padding: 0;
@@ -10,24 +9,23 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
+    src: url(./Fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
 }
 @font-face {
     font-family: "Gilroy1";
-    src: url(Fonts/Gilroy-Light.ttf) format('truetype');
+    src: url(./Fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
 }
-
 /* Browser Window */
 #browser-window {
   width: 100%;
   height: 100%;
 }
 
-/* MAIN DESKTOP */
+/* MAIN-DESKTOP */
 .desktop {
     height: 100%;
     width: 100%;
-    background-image: url(img/img.jpg);
+    background-image: url(./img/pawel-czerwinski-SElyqKdkJkE-unsplash.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -36,13 +34,9 @@ html, body {
     user-select: none;
 }
 .desktop .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    height: 8vh;
+    width: 8vh;
     position: absolute;
-    width: 13vh;
-    height: auto;
 }
 .desktop #icon-mypc {
     height: auto;
@@ -68,23 +62,24 @@ html, body {
     top: 33vh;
     left: 2.05vw;
 }
-.desktop .icon p {
-    position: static !important;
-    margin-top: 0.3em;
+.desktop p {
     color: #fff;
+    font-size: 1px;
     font-family: "Gilroy1";
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
+    cursor: default;
 }
-.desktop #icon-vscode p,
-.desktop #icon-calc p,
-.desktop #icon-browser p,
-.desktop #icon-mypc p {
-    position: static !important;
-    margin-top: 0.3em;
-    text-align: center;
-    width: 100%;
+.desktop #icon-browser p {
+    position: absolute;
+    left: 0.29vw;
+}
+.desktop #icon-calc p {
+    position: absolute;
+    left: -0.7vw;
+}
+.desktop #icon-vscode p {
+    position: absolute;
+    top: 6.9vh;
+    left: -0.4vw;
 }
 .desktop #top-box {
     font-family: "Gilroy";
@@ -230,7 +225,7 @@ html, body {
     height: auto;
 }
 
-/* BROWSER */
+/*BROWSER*/
 #browser {
     position: absolute;
     top: 23%;
@@ -359,7 +354,7 @@ input::placeholder {
     transform: scale(0.9);
 }
 
-/* CALCULATOR */
+/*CALCULATOR*/
 #calculator {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -484,155 +479,3 @@ button:hover {
 #op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
     color: #fb7c14;
 }
-
-/* Tablet and below */
-@media (max-width: 1024px) {
-  .desktop #top-box {
-    top: 2vh;
-    right: 2vw;
-    width: 55vw;
-    max-width: 400px;
-    font-size: 1rem;
-    padding: 2vh 2vw;
-  }
-  #mypc, #browser {
-    left: 5vw;
-    top: 10vh;
-    width: 90vw;
-    min-width: 0;
-    max-width: 96vw;
-    height: 55vh;
-  }
-  #calculator {
-    left: 10vw;
-    top: 10vh;
-    width: 60vw;
-    height: 60vh;
-    min-width: 0;
-  }
-  #browser #browser-body,
-  #mypc #app-body {
-    gap: 3vw;
-    padding: 2vh 2vw 10vh 2vw;
-  }
-  #search-bar {
-    top: 18vh;
-    width: 95%;
-  }
-  #search-bar input {
-    width: 60%;
-    font-size: 1em;
-  }
-  .desktop #taskbar {
-    padding: 0 5px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .desktop {
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  .desktop .icon,
-  #mypc .icon {
-    width: 10vw;
-    min-width: 44px;
-    height: 10vw;
-    min-height: 44px;
-  }
-  .desktop #icon-mypc, .desktop #icon-vscode,
-  .desktop #icon-calc, .desktop #icon-browser {
-    width: 13vw;
-    min-width: 55px;
-    left: 2vw !important;
-    top: auto !important;
-    position: static;
-    margin-bottom: 3vw;
-    display: inline-block;
-  }
-  #mypc, #browser, #calculator {
-    left: 2vw;
-    top: 7vh;
-    width: 95vw;
-    min-width: 0;
-    max-width: 98vw;
-    height: 65vh;
-    border-radius: 2vw;
-    font-size: 1em;
-    overflow: auto;
-  }
-  #mypc #app-header, #browser #browser-header, #calc-header {
-    min-height: 5vh;
-    font-size: 1em;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-  #mypc #app-body, #browser #browser-body, #calc-body {
-    flex-direction: column;
-    gap: 2vh;
-    padding: 2vh 5vw 8vh 5vw;
-    align-items: center;
-  }
-  #search-bar {
-    flex-direction: column;
-    width: 98%;
-    height: auto;
-    gap: 1vh;
-    top: 14vh;
-    left: 1vw;
-    transform: none;
-    position: static;
-    margin-top: 10px;
-  }
-  #search-bar input, #search-bar #newbtn {
-    width: 94%;
-    margin: 2px;
-    font-size: 1em;
-    border-radius: 2vh;
-  }
-  .desktop #top-box {
-    position: static !important;
-    margin: 1.5vh auto 1vh auto;
-    width: 95vw;
-    max-width: 100vw;
-    min-width: 0;
-    font-size: 1em;
-    left: unset;
-    right: unset;
-    top: unset;
-    z-index: 1;
-  }
-  .desktop #taskbar {
-    flex-direction: row;
-    height: 40px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    padding: 0 3px;
-    justify-content: center;
-  }
-  .desktop #taskbar #task-left, .desktop #taskbar #task-right {
-    gap: 7px;
-    font-size: 0.9em;
-  }
-  #calc-body {
-    padding: 10px;
-  }
-  #calc-body > input,
-  .row {
-    max-width: 90vw;
-    font-size: 1.10em;
-    padding: 10px;
-  }
-  button {
-    width: 36px;
-    height: 36px;
-    font-size: 17px;
-  }
-
-}
-
-
-
