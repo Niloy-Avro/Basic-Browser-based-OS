@@ -36,9 +36,13 @@ html, body {
     user-select: none;
 }
 .desktop .icon {
-    height: 8vh;
-    width: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
+    width: 13vh;
+    height: auto;
 }
 .desktop #icon-mypc {
     height: auto;
@@ -64,24 +68,23 @@ html, body {
     top: 33vh;
     left: 2.05vw;
 }
-.desktop p {
+.desktop .icon p {
+    position: static !important;
+    margin-top: 0.3em;
     color: #fff;
-    font-size: 1px;
     font-family: "Gilroy1";
-    cursor: default;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
 }
-.desktop #icon-browser p {
-    position: absolute;
-    left: 0.29vw;
-}
-.desktop #icon-calc p {
-    position: absolute;
-    left: -0.7vw;
-}
-.desktop #icon-vscode p {
-    position: absolute;
-    top: 6.9vh;
-    left: -0.4vw;
+.desktop #icon-vscode p,
+.desktop #icon-calc p,
+.desktop #icon-browser p,
+.desktop #icon-mypc p {
+    position: static !important;
+    margin-top: 0.3em;
+    text-align: center;
+    width: 100%;
 }
 .desktop #top-box {
     font-family: "Gilroy";
@@ -630,5 +633,6 @@ button:hover {
   }
 
 }
+
 
 
