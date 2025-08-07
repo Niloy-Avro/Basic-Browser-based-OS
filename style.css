@@ -1,0 +1,631 @@
+/* GLOBAL RESET & FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(./Fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Gilroy1";
+    src: url(./Fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
+}
+
+/* Browser Window */
+#browser-window {
+  width: 100%;
+  height: 100%;
+}
+
+/* MAIN DESKTOP */
+.desktop {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+.desktop .icon {
+    height: 8vh;
+    width: 8vh;
+    position: absolute;
+}
+.desktop #icon-mypc {
+    height: auto;
+    width: 13vh;
+    top: 5vh;
+    left: 2.3vw;
+}
+.desktop #icon-vscode {
+    height: auto;
+    width: 13vh;
+    top: 4.5vh;
+    left: 8.5vw;
+}
+.desktop #icon-calc {
+    height: auto;
+    width: 13vh;
+    top: 18vh;
+    left: 2vw;
+}
+.desktop #icon-browser {
+    height: auto;
+    width: 13vh;
+    top: 33vh;
+    left: 2.05vw;
+}
+.desktop p {
+    color: #fff;
+    font-size: 1px;
+    font-family: "Gilroy1";
+    cursor: default;
+}
+.desktop #icon-browser p {
+    position: absolute;
+    left: 0.29vw;
+}
+.desktop #icon-calc p {
+    position: absolute;
+    left: -0.7vw;
+}
+.desktop #icon-vscode p {
+    position: absolute;
+    top: 6.9vh;
+    left: -0.4vw;
+}
+.desktop #top-box {
+    font-family: "Gilroy";
+    position: absolute;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 6px 12px rgba(254, 254, 254, 0.2);
+    width: 28vw;
+    max-width: 250px;
+    height: auto;
+    padding: 2vh 1vw;
+    right: 2vw;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    cursor: default;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+.desktop #top-box #time,
+.desktop #top-box #date,
+.desktop #top-box #weather {
+    padding: 1.5vh 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.desktop #top-box:hover {
+    box-shadow: 0px 10px 40px rgba(254, 254, 254, 0.4);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.desktop #taskbar {
+    background-color: rgb(157, 155, 155);
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.desktop #taskbar #task-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    gap: 25px;
+}
+#icon-browser2 {
+    position: relative;
+    bottom: 0;
+}
+#icon-calc2 {
+    position: relative;
+    bottom: 0;
+}
+.desktop #taskbar #task-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 1%;
+}
+.desktop #taskbar img {
+    width: 30px;
+    height: 30px;
+}
+
+/* MY-PC */
+#mypc {
+    background-color: rgba(255, 255, 255, 0.473);
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    top: 23%;
+    left: 23%;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 1vh;
+}
+#mypc #app-header {
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+#mypc #app-header span {
+    font-size: 1rem;
+    position: absolute;
+    left: 1vw;
+}
+#mypc #app-header #cross {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0.1vw;
+    height: 4.2vh;
+    width: 4.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mypc #app-header #cross:hover {
+    background-color: rgba(227, 36, 36, 0.525);
+    border: #fff;
+    border-radius: 50%;
+}
+#mypc #app-header #cross img {
+    height: 20px;
+    width: 20px;
+}
+#mypc #app-body {
+    margin-top: 40px;
+    display: flex;
+    gap: 8vw;
+    padding: 2vh 6.5vw 30vh 6.5vw;
+    justify-content: space-evenly;
+}
+#mypc .icon {
+    height: auto;
+    width: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mypc .icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* BROWSER */
+#browser {
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    width: 100vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1730818877233-a29f2702f071?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vh;
+    overflow: hidden;
+    font-family: "Gilroy", sans-serif;
+}
+#browser #browser-header {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 1vh;
+    border-bottom: 2px solid #000;
+}
+#browser #browser-header span {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    position: absolute;
+    left: 1vw;
+}
+#browser #browser-header #browser-cross {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0.1vw;
+    height: 4.2vh;
+    width: 4.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#browser #browser-header #browser-cross img {
+    height: 20px;
+    width: 20px;
+}
+#browser #browser-header #browser-cross:hover {
+    background-color: rgb(227, 36, 36, 0.525);
+    border-radius: 50%;
+}
+#page-heading > h1 > a {
+    position: absolute;
+    left: 4.3vw;
+    top: 6.5vh;
+    width: 40vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.099);
+    border-radius: 10vh;
+}
+#browser #browser-body {
+    margin-top: 40px;
+    padding: 2vh 6.5vw 30vh 6.5vw;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8vw;
+    position: relative;
+}
+#search-bar {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 5vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-radius: 1vh;
+}
+#search-bar input {
+    padding: 0.6vh 2vh;
+    border-radius: 5vh;
+    border: none;
+    border: 2px solid #000;
+    background-color: rgba(254, 254, 254, 0.264);
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    width: 40%;
+}
+input::placeholder {
+    color: #000;
+    opacity: 0.45;
+}
+#search-bar #newbtn {
+    background-color: rgb(8, 136, 221);
+    padding: 0.5vh 3vh;
+    border-radius: 2vh;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+#search-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Gilroy1";
+    letter-spacing: .1vw;
+}
+#search-bar #newbtn:hover {
+    background: linear-gradient(to bottom,rgb(132, 132, 225),rgb(71, 71, 164));
+    box-shadow: 5px 10px 30px rgba(29, 28, 28, 0.8);
+    transition: all 0.3s;
+    transform: scale(0.9);
+}
+
+/* CALCULATOR */
+#calculator {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: 7%;
+    left: 70vh;
+    width: 60vh;
+    height: 82vh;
+    border: 1px solid #d7d0d07d;
+    border-radius: 1vh;
+}
+#calc-header {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 1vh;
+    border-bottom: 2px solid #ffffff7b;
+}
+#calc-header span {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    position: absolute;
+    left: 1vw;
+}
+#calc-cross {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0.1vw;
+    height: 4.2vh;
+    width: 4.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calc-cross img {
+    height: 20px;
+    width: 20px;
+}
+#calc-cross:hover {
+    background-color: rgb(227, 36, 36, 0.525);
+    border-radius: 50%;
+}
+#calc-body {
+    height: 72vh;
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    top: 6.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    background: linear-gradient(45deg, #000, #373535);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #fff;
+    box-shadow: 0px 3px 15px 0.1px rgba(113, 115, 119, 0.5);
+    font-family: 'Gilroy1';
+    gap: 3vh;
+}
+#calc-body > input {
+    width: 100%;
+    max-width: 45vh;
+    border: none;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #fff; 
+    background: transparent;
+    box-shadow: 0px 3px 15px 0.1px rgba(17, 17, 17, 0.5);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#calc-body > input::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    width: 100%;
+    max-width: 45vh;
+}
+button {
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+button:hover {
+    background-color: #373535;
+    transform: scale(0.95);
+    color: #fb7c14;
+}
+#op1, #op2, #op3, #op4, #op5, #op6, #op7 {
+    color: #6dee0a;
+}
+#equal {
+    background-color: #fb7c14;
+}
+#equal:hover {
+    background-color: #373535;
+    transform: scale(0.95);
+}
+#op1:hover, #op2:hover, #op3:hover, #op4:hover, #op5:hover, #op6:hover, #op7:hover{
+    color: #fb7c14;
+}
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .desktop #top-box {
+    top: 2vh;
+    right: 2vw;
+    width: 55vw;
+    max-width: 400px;
+    font-size: 1rem;
+    padding: 2vh 2vw;
+  }
+  #mypc, #browser {
+    left: 5vw;
+    top: 10vh;
+    width: 90vw;
+    min-width: 0;
+    max-width: 96vw;
+    height: 55vh;
+  }
+  #calculator {
+    left: 10vw;
+    top: 10vh;
+    width: 60vw;
+    height: 60vh;
+    min-width: 0;
+  }
+  #browser #browser-body,
+  #mypc #app-body {
+    gap: 3vw;
+    padding: 2vh 2vw 10vh 2vw;
+  }
+  #search-bar {
+    top: 18vh;
+    width: 95%;
+  }
+  #search-bar input {
+    width: 60%;
+    font-size: 1em;
+  }
+  .desktop #taskbar {
+    padding: 0 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .desktop {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .desktop .icon,
+  #mypc .icon {
+    width: 10vw;
+    min-width: 44px;
+    height: 10vw;
+    min-height: 44px;
+  }
+  .desktop #icon-mypc, .desktop #icon-vscode,
+  .desktop #icon-calc, .desktop #icon-browser {
+    width: 13vw;
+    min-width: 55px;
+    left: 2vw !important;
+    top: auto !important;
+    position: static;
+    margin-bottom: 3vw;
+    display: inline-block;
+  }
+  #mypc, #browser, #calculator {
+    left: 2vw;
+    top: 7vh;
+    width: 95vw;
+    min-width: 0;
+    max-width: 98vw;
+    height: 65vh;
+    border-radius: 2vw;
+    font-size: 1em;
+    overflow: auto;
+  }
+  #mypc #app-header, #browser #browser-header, #calc-header {
+    min-height: 5vh;
+    font-size: 1em;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  #mypc #app-body, #browser #browser-body, #calc-body {
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh 5vw 8vh 5vw;
+    align-items: center;
+  }
+  #search-bar {
+    flex-direction: column;
+    width: 98%;
+    height: auto;
+    gap: 1vh;
+    top: 14vh;
+    left: 1vw;
+    transform: none;
+    position: static;
+    margin-top: 10px;
+  }
+  #search-bar input, #search-bar #newbtn {
+    width: 94%;
+    margin: 2px;
+    font-size: 1em;
+    border-radius: 2vh;
+  }
+  .desktop #top-box {
+    position: static !important;
+    margin: 1.5vh auto 1vh auto;
+    width: 95vw;
+    max-width: 100vw;
+    min-width: 0;
+    font-size: 1em;
+    left: unset;
+    right: unset;
+    top: unset;
+    z-index: 1;
+  }
+  .desktop #taskbar {
+    flex-direction: row;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0 3px;
+    justify-content: center;
+  }
+  .desktop #taskbar #task-left, .desktop #taskbar #task-right {
+    gap: 7px;
+    font-size: 0.9em;
+  }
+  #calc-body {
+    padding: 10px;
+  }
+  #calc-body > input,
+  .row {
+    max-width: 90vw;
+    font-size: 1.10em;
+    padding: 10px;
+  }
+  button {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+}
