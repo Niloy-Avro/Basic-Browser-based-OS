@@ -482,197 +482,207 @@ button:hover {
 /*MOBILE RESPONSIVE*/
 @media (max-width: 600px) {
   /* Desktop icons stack vertically */
-  .desktop {
-    flex-direction: column;
-    align-items: flex-start;
-    background-size: cover;
-    background-position: center;
-  }
-  .desktop .icon,
-  .desktop #icon-mypc,
-  .desktop #icon-vscode,
-  .desktop #icon-calc,
-  .desktop #icon-browser {
-    width: 14vw;
-    height: 14vw;
-    left: 2vw;
-    top: auto;
-    position: static;
-    margin-bottom: 2vw;
-  }
-  .desktop p {
-    font-size: 3vw;
-  }
-  .desktop #top-box {
-    width: 50vw;        
-    right: 0;
-    left: auto;
-    top: 0;
-    border-radius: 0 0 2vw 0;
-    font-size: 4vw;
-    padding: 6vw 2vw;
-    min-height: 12vw;
-    position: fixed;
-    z-index: 4;
-    box-sizing: border-box;
-  }
-  .desktop #taskbar {
-    height: 8vw;
-    padding: 0 2vw;
-    font-size: 3vw;
-  }
-  .desktop #taskbar img {
-    width: 6vw;
-    height: 6vw;
-  }
-  /* Stack taskbar icons and shrink gaps */
-  .desktop #taskbar #task-left,
-  .desktop #taskbar #task-right {
-    gap: 2vw;
-  }
+    .desktop {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2vw;
+        background-size: cover;
+        background-position: center;
+    }
+    .desktop .icon,
+    .desktop #icon-mypc,
+    .desktop #icon-vscode,
+    .desktop #icon-calc,
+    .desktop #icon-browser {
+        width: 14vw;
+        height: 14vw;
+        left: 2vw;
+        top: auto;
+        position: static;
+        margin-bottom: 10vw;
+        margin-left: 2vw;
+    }
+    .desktop p {
+        font-size: 3vw;
+        margin-top: 2.5vw;
+    }
+    .desktop> #icon-vscode>p {
+        margin-left: 2vw;
+    }
+    .desktop> #icon-calc>p {
+        margin-left: 1vw;
+    }
+    .desktop> #icon-browser>p {
+        margin-left: 3vw;
+    }
+    .desktop #top-box {
+        width: 50vw;        
+        right: 0;
+        left: auto;
+        top: 0;
+        border-radius: 0 0 2vw 0;
+        font-size: 4vw;
+        padding: 6vw 2vw;
+        min-height: 12vw;
+        position: fixed;
+        z-index: 4;
+        box-sizing: border-box;
+    }
+    .desktop #taskbar {
+        height: 8vw;
+        padding: 0 2vw;
+        font-size: 3vw;
+    }
+    .desktop #taskbar img {
+        width: 6vw;
+        height: 6vw;
+    }
+    /* Stack taskbar icons and shrink gaps */
+    .desktop #taskbar #task-left,
+    .desktop #taskbar #task-right {
+        gap: 2vw;
+    }
 
-  /* MY-PC window */
-  #mypc {
-    top: 8vw;
-    left: 2vw;
-    width: 96vw;
-    height: 60vw;
-    border-radius: 2vw;
-    flex-direction: column;
-    font-size: 4vw;
-  }
-  #mypc #app-header {
-    height: 10vw;
-    font-size: 4vw;
-    border-bottom-width: 1px;
-  }
-  #mypc #app-header span {
-    left: 4vw;
-    font-size: 4vw;
-  }
-  #mypc #app-header #cross {
-    right: 2vw;
-    height: 8vw;
-    width: 8vw;
-  }
-  #mypc #app-header #cross img {
-    height: 4vw;
-    width: 4vw;
-  }
-  #mypc #app-body {
-    margin-top: 10vw;
-    flex-direction: column;
-    gap: 4vw;
-    padding: 4vw 2vw 8vw 2vw;
-  }
-  #mypc .icon {
-    width: 16vw;
-    margin-bottom: 2vw;
-  }
+    /* MY-PC window */
+    #mypc {
+        top: 8vw;
+        left: 2vw;
+        width: 96vw;
+        height: 60vw;
+        border-radius: 2vw;
+        flex-direction: column;
+        font-size: 4vw;
+    }
+    #mypc #app-header {
+        height: 10vw;
+        font-size: 4vw;
+        border-bottom-width: 1px;
+    }
+    #mypc #app-header span {
+        left: 4vw;
+        font-size: 4vw;
+    }
+    #mypc #app-header #cross {
+        right: 2vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    #mypc #app-header #cross img {
+        height: 4vw;
+        width: 4vw;
+    }
+    #mypc #app-body {
+        margin-top: 10vw;
+        flex-direction: column;
+        gap: 4vw;
+        padding: 4vw 2vw 8vw 2vw;
+    }
+    #mypc .icon {
+        width: 16vw;
+        margin-bottom: 2vw;
+    }
 
-  /* BROWSER window */
-  #browser {
-    top: 8vw;
-    left: 2vw;
-    width: 96vw;
-    height: 60vw;
-    border-radius: 2vw;
-    font-size: 4vw;
-  }
-  #browser #browser-header {
-    height: 10vw;
-    font-size: 4vw;
-    padding: 0 2vw;
-    border-bottom-width: 1px;
-  }
-  #browser #browser-header span {
-    left: 4vw;
-    font-size: 4vw;
-  }
-  #browser #browser-header #browser-cross {
-    right: 2vw;
-    height: 8vw;
-    width: 8vw;
-  }
-  #browser #browser-header #browser-cross img {
-    height: 4vw;
-    width: 4vw;
-  }
-  #browser #browser-body {
-    margin-top: 10vw;
-    flex-direction: column;
-    gap: 4vw;
-    padding: 4vw 2vw 8vw 2vw;
-  }
-  #search-bar {
-    top: 16vw;
-    left: 50vw;
-    width: 90vw;
-    height: 8vw;
-    gap: 2vw;
-    padding: 1vw;
-    border-radius: 2vw;
-  }
-  #search-bar input {
-    padding: 1vw 2vw;
-    font-size: 4vw;
-    width: 55vw;
-  }
-  #search-bar #newbtn {
-    padding: 1vw 4vw;
-    border-radius: 4vw;
-    font-size: 3vw;
-  }
+    /* BROWSER window */
+    #browser {
+        top: 8vw;
+        left: 2vw;
+        width: 96vw;
+        height: 60vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+    #browser #browser-header {
+        height: 10vw;
+        font-size: 4vw;
+        padding: 0 2vw;
+        border-bottom-width: 1px;
+    }
+    #browser #browser-header span {
+        left: 4vw;
+        font-size: 4vw;
+    }
+    #browser #browser-header #browser-cross {
+        right: 2vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    #browser #browser-header #browser-cross img {
+        height: 4vw;
+        width: 4vw;
+    }
+    #browser #browser-body {
+        margin-top: 10vw;
+        flex-direction: column;
+        gap: 4vw;
+        padding: 4vw 2vw 8vw 2vw;
+    }
+    #search-bar {
+        top: 16vw;
+        left: 50vw;
+        width: 90vw;
+        height: 8vw;
+        gap: 2vw;
+        padding: 1vw;
+        border-radius: 2vw;
+    }
+    #search-bar input {
+        padding: 1vw 2vw;
+        font-size: 4vw;
+        width: 55vw;
+    }
+    #search-bar #newbtn {
+        padding: 1vw 4vw;
+        border-radius: 4vw;
+        font-size: 3vw;
+    }
 
-  /* CALCULATOR window */
-  #calculator {
-    top: 8vw;
-    left: 2vw;
-    width: 96vw;
-    height: 80vw;
-    border-radius: 2vw;
-    font-size: 4vw;
-  }
-  #calc-header {
-    height: 10vw;
-    font-size: 4vw;
-    padding: 0 2vw;
-    border-bottom-width: 1px;
-  }
-  #calc-header span {
-    left: 4vw;
-    font-size: 4vw;
-  }
-  #calc-cross {
-    right: 2vw;
-    height: 8vw;
-    width: 8vw;
-  }
-  #calc-cross img {
-    height: 4vw;
-    width: 4vw;
-  }
-  #calc-body {
-    height: 65vw;
-    width: 90vw;
-    padding: 3vw;
-    gap: 2vw;
-  }
-  #calc-body > input {
-    padding: 3vw;
-    font-size: 7vw;
-    max-width: 90vw;
-  }
-  .row {
-    gap: 2vw;
-    max-width: 90vw;
-  }
-  button {
-    height: 10vw;
-    width: 10vw;
-    font-size: 4vw;
-    border-radius: 50%;
-  }
+    /* CALCULATOR window */
+    #calculator {
+        top: 8vw;
+        left: 2vw;
+        width: 96vw;
+        height: 80vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+    #calc-header {
+        height: 10vw;
+        font-size: 4vw;
+        padding: 0 2vw;
+        border-bottom-width: 1px;
+    }
+    #calc-header span {
+        left: 4vw;
+        font-size: 4vw;
+    }
+    #calc-cross {
+        right: 2vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    #calc-cross img {
+        height: 4vw;
+        width: 4vw;
+    }
+    #calc-body {
+        height: 65vw;
+        width: 90vw;
+        padding: 3vw;
+        gap: 2vw;
+    }
+    #calc-body > input {
+        padding: 3vw;
+        font-size: 7vw;
+        max-width: 90vw;
+    }
+    .row {
+        gap: 2vw;
+        max-width: 90vw;
+    }
+    button {
+        height: 10vw;
+        width: 10vw;
+        font-size: 4vw;
+        border-radius: 50%;
+    }
 }
-
-/* --- End mobile styles --- */
