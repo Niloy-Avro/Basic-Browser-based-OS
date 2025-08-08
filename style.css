@@ -503,41 +503,20 @@ button:hover {
   .desktop p {
     font-size: 3vw;
   }
-.desktop #top-box {
-    font-family: "Gilroy";
-    position: absolute;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 6px 12px rgba(254, 254, 254, 0.2);
-    width: 28vw;
-    max-width: 250px;
-    height: auto;
-    padding: 2vh 1vw;
-    right: 2vw;
-    top: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 1.5em;
-    cursor: default;
-    transition: all 0.5s ease;
-    transform: scale(1);
-}
-.desktop #top-box #time,
-.desktop #top-box #date,
-.desktop #top-box #weather {
-    padding: 1.5vh 0;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-.desktop #top-box:hover {
-    box-shadow: 0px 10px 40px rgba(254, 254, 254, 0.4);
-    transition: 0.5s;
-    transform: scale(1.05);
+@media (max-width: 600px) {
+  .desktop #top-box {
+    width: 80vw;        /* or set your preferred width, e.g. 60vw, 50vw */
+    left: 0;
+    right: auto;
+    top: 0;
+    border-radius: 0 0 2vw 0;  /* Only round bottom right corner if you want */
+    font-size: 4vw;
+    padding: 6vw 2vw;
+    min-height: 12vw;
+    position: fixed;
+    z-index: 10;
+    box-sizing: border-box;
+  }
 }
   .desktop #taskbar {
     height: 8vw;
