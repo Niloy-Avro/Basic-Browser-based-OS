@@ -503,13 +503,12 @@ button:hover {
   .desktop p {
     font-size: 3vw;
   }
-@media (max-width: 600px) {
   .desktop #top-box {
-    width: 80vw;        /* or set your preferred width, e.g. 60vw, 50vw */
+    width: 50vw;        
     left: 0;
     right: auto;
     top: 0;
-    border-radius: 0 0 2vw 0;  /* Only round bottom right corner if you want */
+    border-radius: 0 0 2vw 0;
     font-size: 4vw;
     padding: 6vw 2vw;
     min-height: 12vw;
@@ -517,7 +516,6 @@ button:hover {
     z-index: 10;
     box-sizing: border-box;
   }
-}
   .desktop #taskbar {
     height: 8vw;
     padding: 0 2vw;
