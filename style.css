@@ -513,7 +513,7 @@ button:hover {
     padding: 6vw 2vw;
     min-height: 12vw;
     position: fixed;
-    z-index: 0;
+    z-index: 5;
     box-sizing: border-box;
   }
   .desktop #taskbar {
