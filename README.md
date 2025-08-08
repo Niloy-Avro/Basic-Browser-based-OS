@@ -1,7 +1,7 @@
 <h1 align="center">🖥️ Basic-Browser-based-OS</h1>
 
 <p align="center">
-  ![Top 2 Languages](https://img.shields.io/badge/CSS-43.9%25-blue?style=for-the-badge&logo=css3&logoColor=white) ![HTML-41.2%](https://img.shields.io/badge/HTML-41.2%25-orange?style=for-the-badge&logo=html5&logoColor=white)
+  <img src="https://img.shields.io/github/languages/top/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge"/>
   <img src="https://img.shields.io/github/last-commit/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
   <img src="https://img.shields.io/github/repo-size/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
 </p>
