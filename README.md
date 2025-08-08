@@ -15,6 +15,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&center=true&vCenter=true&width=500&lines=Simulating+an+OS...;Loading+desktop+icons...;Booting+Browser-OS+UI..." alt="Typing animation" />
+</p>
+
+---
+
 ## 🚀 Demo
 
 <img src="img/demo.png" alt="Demo Screenshot" width="100%"/>
@@ -38,14 +44,3 @@
 - CSS3 (Flexbox, Grid, Animation)
 - JavaScript (Vanilla)
 
----
-
-## 📷 Preview
-
-> Click to see a full experience in your browser!
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&center=true&vCenter=true&width=500&lines=Simulating+an+OS...;Loading+desktop+icons...;Booting+Browser-OS+UI..." alt="Typing animation" />
-</p>
-
----
