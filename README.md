@@ -26,9 +26,9 @@
 - 🖥️ Desktop-like interface
 - 📁 Clickable icons with app launch animation
 - ⏰ Live clock and date display
-- 🌐 Browser icon with DuckDuckGo search
+- 🌐 Browser icon with Google search
 - ⚙️ JavaScript-driven interactivity
-- 💡 Responsive and customizable
+- 💡 Responsive
 
 ---
 
