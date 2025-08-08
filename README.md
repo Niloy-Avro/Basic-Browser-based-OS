@@ -44,3 +44,14 @@
 - CSS3 (Flexbox, Grid, Animation)
 - JavaScript (Vanilla)
 
+## 👨‍💻 Author
+
+- Niloy Avro Mondal  
+- GitHub: [@Niloy-Avro](https://github.com/Niloy-Avro)
+
+---
+
+## ⭐ Show Support
+
+If you like this project, consider giving it a ⭐ on GitHub!  
+Feel free to fork and make your own version 💡
