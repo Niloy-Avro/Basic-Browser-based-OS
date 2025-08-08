@@ -1,4 +1,4 @@
-* {
+ki* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -495,8 +495,8 @@ button:hover {
   .desktop #icon-browser {
     width: 14vw;
     height: 14vw;
-    left: 2vw !important;
-    top: auto !important;
+    left: 2vw;
+    top: auto;
     position: static;
     margin-bottom: 2vw;
   }
@@ -513,7 +513,6 @@ button:hover {
     padding: 6vw 2vw;
     min-height: 12vw;
     position: fixed;
-    z-index: 10;
     box-sizing: border-box;
   }
   .desktop #taskbar {
