@@ -505,8 +505,8 @@ button:hover {
   }
   .desktop #top-box {
     width: 50vw;        
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: 0;
     border-radius: 0 0 2vw 0;
     font-size: 4vw;
