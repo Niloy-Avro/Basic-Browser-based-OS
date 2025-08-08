@@ -201,7 +201,7 @@ function linkOpen() {
             e.preventDefault();
             const query = input.value.trim();
             if (query !== "") {
-                const url = "https://duckduckgo.com/?q=" + encodeURIComponent(query);
+                const url = "https://www.google.com/search?q=" + encodeURIComponent(query);
                 window.open(url, "_main");
             } else{
                 alert("Please enter a search term!");
@@ -403,9 +403,49 @@ function calcOpen() {
 }
 calcOpen();
 
-//!Vs code icon 
-let vscodeicon = document.querySelector("#icon-vscode");
+//!Opening-Closing Vs code
+function VSCodeOpen() {
+    let vscodeicon = document.querySelector("#icon-vscode");
+    let browserIcon2 = document.querySelector("#icon-browser2");
+    let browser = document.querySelector("#browser");
+    let mypc = document.querySelector("#mypc");
+    let calc = document.querySelector("#calculator");
+    let calcIcon2 = document.querySelector("#icon-calc2");
 
-vscodeicon.addEventListener("dblclick", function(e) {
-    window.open("https://code.visualstudio.com/", "_blank");
-});
+    vscodeicon.addEventListener("dblclick", function(e) {
+        window.open("https://code.visualstudio.com/", "_blank");
+        gsap.to(browserIcon2, {
+            bottom: "0",
+            width: "30px",
+            height: "30px",
+            duration: 0.3,
+            ease: "power4.out"
+        });
+        gsap.to(browser, {
+            duration: 0.3,
+            opacity: 0,
+            scale: 0.8,
+            ease: "circle.in",
+        });
+        gsap.to(mypc, {
+            duration: 0.3,
+            opacity: 0,
+            scale: 0.8,
+            ease: "circle.in",
+        });
+        gsap.to(calc, {
+            duration: 0.3,
+            opacity: 0,
+            scale: 0.8,
+            ease: "circle.in",
+        });
+        gsap.to(calcIcon2, {
+            bottom: "0",
+            width: "30px",
+            height: "30px",
+            duration: 0.3,
+            ease: "power4.out"
+        });
+    });
+}
+VSCodeOpen();
