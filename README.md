@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/2nd%20Language-CSS-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/github/languages/top/Niloy-Avro/Basic-Browser-based-OS?style=for-the badge&label=2nd%20Language&color=blue" />
   <img src="https://img.shields.io/github/last-commit/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
   <img src="https://img.shields.io/github/repo-size/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
 </p>
