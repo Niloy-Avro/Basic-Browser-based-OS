@@ -373,7 +373,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(193, 181, 181, 0.3);
     color: #fff;
     padding: 0 1vh;
     border-bottom: 2px solid #ffffff7b;
@@ -664,6 +664,7 @@ button:hover {
         font-size: 4vw;
         padding: 0 2vw;
         border-bottom-width: 1px;
+        background-color: rgba(193, 181, 181, 0.3);
     }
     #calc-header span {
         left: 4vw;
@@ -703,3 +704,4 @@ button:hover {
         border-radius: 50%;
     }
 }
+
