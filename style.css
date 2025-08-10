@@ -507,19 +507,19 @@ button:hover {
         margin-top: 2.5vw;
     }
     .desktop> #icon-vscode>p {
-        margin-left: 2vw;
+        margin-left: 5vw;
     }
     .desktop> #icon-calc>p {
-        margin-left: 1vw;
+        margin-left: 4vw;
     }
     .desktop> #icon-browser>p {
-        margin-left: 3vw;
+        margin-left: 5.5vw;
     }
     .desktop #top-box {
         width: 50vw;        
-        right: 0;
+        right: 3vw;
         left: auto;
-        top: 0;
+        top: 5vw;
         border-radius: 0 0 2vw 0;
         font-size: 4vw;
         padding: 6vw 2vw;
@@ -562,6 +562,7 @@ button:hover {
     #mypc #app-header span {
         left: 4vw;
         font-size: 4vw;
+        font-family: "Gilroy1";
     }
     #mypc #app-header #cross {
         right: 2vw;
@@ -612,6 +613,14 @@ button:hover {
         height: 4vw;
         width: 4vw;
     }
+    #browser #page-heading h1 a {
+        position: absolute;
+        top: 8vh;
+        left: 1.5vw;
+        width: 60vw;
+        height: 5vh;
+        font-size: 28px;
+    }
     #browser #browser-body {
         margin-top: 10vw;
         flex-direction: column;
@@ -657,6 +666,7 @@ button:hover {
     #calc-header span {
         left: 4vw;
         font-size: 4vw;
+        font-family: "Gilroy1";
     }
     #calc-cross {
         right: 2vw;
