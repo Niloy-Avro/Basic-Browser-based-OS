@@ -449,3 +449,21 @@ function VSCodeOpen() {
     });
 }
 VSCodeOpen();
+
+//!Showing non operating alert
+function popupalert() {
+    let win = document.querySelector("#icon-win");
+    let wifi = document.querySelector("#wifi");
+    let battery = document.querySelector("#battery");
+
+    win.addEventListener("click", function(){
+        alert("Windows Start: feature is not functional");
+    });
+    wifi.addEventListener("click", function(){
+        alert("Wi-Fi status: feature is not functional");
+    });
+    battery.addEventListener("click", function(){
+        alert("Battery status: feature is not functional");
+    });
+}
+popupalert();
