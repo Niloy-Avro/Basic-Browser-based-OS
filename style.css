@@ -7,14 +7,14 @@ html, body {
     height: 100%;
     width: 100%;
 }
-@font-face {
+@@font-face {
     font-family: "Gilroy";
     src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
-}
+}  
 @font-face {
     font-family: "Gilroy1";
     src: url(Fonts/Gilroy-Light.ttf) format('truetype');
-}
+}  
 /* Browser Window */
 #browser-window {
   width: 100%;
@@ -253,7 +253,7 @@ html, body {
 }
 #browser #browser-header span {
     font-size: 1rem;
-    letter-spacing: .1rem;
+    letter-spacing: .03rem;
     position: absolute;
     left: 1vw;
 }
@@ -499,8 +499,9 @@ button:hover {
         left: 2vw;
         top: auto;
         position: static;
+        margin-top: 5vw;
         margin-bottom: 10vw;
-        margin-left: 2vw;
+        margin-left: 5vw;
     }
     .desktop p {
         font-size: 3vw;
@@ -603,6 +604,7 @@ button:hover {
     #browser #browser-header span {
         left: 4vw;
         font-size: 4vw;
+        font-family: "Gilroy1";
     }
     #browser #browser-header #browser-cross {
         right: 2vw;
@@ -639,7 +641,7 @@ button:hover {
     #search-bar input {
         padding: 1vw 2vw;
         font-size: 4vw;
-        width: 55vw;
+        width: 30vw;
     }
     #search-bar #newbtn {
         padding: 1vw 4vw;
