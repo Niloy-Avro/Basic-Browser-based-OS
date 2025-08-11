@@ -7,7 +7,7 @@ html, body {
     height: 100%;
     width: 100%;
 }
-@@font-face {
+@font-face {
     font-family: "Gilroy";
     src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
 }  
@@ -704,4 +704,5 @@ button:hover {
         border-radius: 50%;
     }
 }
+
 
