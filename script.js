@@ -454,7 +454,6 @@ VSCodeOpen();
 function popupalert() {
     let win = document.querySelector("#icon-win");
     let wifi = document.querySelector("#wifi");
-    let battery = document.querySelector("#battery");
 
     win.addEventListener("click", function(){
         alert("Windows Start: feature is not functional");
@@ -462,8 +461,52 @@ function popupalert() {
     wifi.addEventListener("click", function(){
         alert("Wi-Fi status: feature is not functional");
     });
-    battery.addEventListener("click", function(){
-        alert("Battery status: feature is not functional");
-    });
 }
 popupalert();
+
+//!Click on battery
+function clickOnBattery() {
+    let clickCount = 0;
+    battery.addEventListener("click", function () {
+        if (clickCount % 2 === 0) {
+            updateBatteryStatus();
+        } else {
+            backUpdateBatteryStatus();
+        }
+        clickCount++;
+    });
+}
+clickOnBattery();
+
+//!Update Battery Status
+function updateBatteryStatus() {
+    let bottom = document.querySelector("#bottom-box");
+    bottom.style.opacity = 1;
+    let text = document.querySelector("#battery-text");
+    let batStatus = document.querySelector("#battery-level");
+    if (!navigator.getBattery) {
+        text.innerHTML = "Battery API not supported";
+        text.style.color = "#de6a31";
+        text.style.lineHeight = "15px";
+        alert("Your browser does not support the Battery API, so real-time battery status cannot be displayed.");
+        return;
+    } else {
+        navigator.getBattery().then(function(battery) {
+            function updateAll() {
+                let level = battery.level * 100;
+                let charging = battery.charging ? "⚡ Charging" : "🔋 On Battery";
+                batStatus.style.width = level + "%";
+                text.innerHTML = `${level}% - ${charging}`;
+            }
+            updateAll();
+
+            // Event listeners for realtime update
+            battery.addEventListener("levelchange", updateAll);
+            battery.addEventListener("chargingchange", updateAll);
+        });
+    }
+}
+function backUpdateBatteryStatus() {
+    let bottom = document.querySelector("#bottom-box");
+    bottom.style.opacity = 0;
+}
