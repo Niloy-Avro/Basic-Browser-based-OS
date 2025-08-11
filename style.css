@@ -9,11 +9,11 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(Fonts/Gilroy-SemiBold.ttf) format('truetype');
+    src: url(../Fonts/Gilroy/Gilroy-Medium.ttf) format('truetype');
 }  
 @font-face {
-    font-family: "Gilroy1";
-    src: url(Fonts/Gilroy-Light.ttf) format('truetype');
+    font-family: "Helvatica";
+    src: url(../Fonts/Helvatica/Helvetica.ttf) format('truetype');
 }  
 /* Browser Window */
 #browser-window {
@@ -25,7 +25,7 @@ html, body {
 .desktop {
     height: 100%;
     width: 100%;
-    background-image: url(img/img.jpg);
+    background-image: url(./img/img.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -47,8 +47,8 @@ html, body {
 .desktop #icon-vscode {
     height: auto;
     width: 13vh;
-    top: 46vh;
-    left: 2vw;
+    top: 47vh;
+    left: 1.7vw;
 }
 .desktop #icon-calc {
     height: auto;
@@ -65,20 +65,20 @@ html, body {
 .desktop p {
     color: #fff;
     font-size: 14px;
-    font-family: "Gilroy1";
+    font-family: "Helvatica";
     cursor: default;
 }
 .desktop #icon-browser p {
     position: absolute;
-    left: 0.29vw;
+    left: 0.22vw;
 }
 .desktop #icon-calc p {
     position: absolute;
-    left: -0.39vw;
+    left: -0.5vw;
 }
 .desktop #icon-vscode p {
     position: absolute;
-    left: -0.4vw;
+    left: -0.2vw;
 }
 .desktop #top-box {
     font-family: "Gilroy";
@@ -112,6 +112,39 @@ html, body {
     letter-spacing: 1px;
 }
 .desktop #top-box:hover {
+    box-shadow: 0px 10px 40px rgba(254, 254, 254, 0.4);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.desktop #bottom-box {
+    font-family: "Gilroy";
+    position: absolute;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 6px 12px rgba(254, 254, 254, 0.2);
+    width: 28vw;
+    max-width: 250px;
+    height: auto;
+    padding: 2vh 1vw;
+    right: 1vw;
+    bottom: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    cursor: default;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    opacity: 0;
+}
+.desktop #bottom-box h2 {
+    padding-bottom: 10px;
+}
+.desktop #bottom-box:hover {
     box-shadow: 0px 10px 40px rgba(254, 254, 254, 0.4);
     transition: 0.5s;
     transform: scale(1.05);
@@ -343,7 +376,7 @@ input::placeholder {
 #search-bar a {
     text-decoration: none;
     color: #fff;
-    font-family: "Gilroy1";
+    font-family: "Helvatica";
     letter-spacing: .1vw;
 }
 #search-bar #newbtn:hover {
@@ -419,7 +452,7 @@ input::placeholder {
     flex-direction: column;
     border: 1px solid #fff;
     box-shadow: 0px 3px 15px 0.1px rgba(113, 115, 119, 0.5);
-    font-family: 'Gilroy1';
+    font-family: 'Helvatica';
     gap: 3vh;
 }
 #calc-body > input {
@@ -508,7 +541,7 @@ button:hover {
         margin-top: 2.5vw;
     }
     .desktop> #icon-vscode>p {
-        margin-left: 5vw;
+        margin-left: 4vw;
     }
     .desktop> #icon-calc>p {
         margin-left: 4vw;
@@ -521,8 +554,22 @@ button:hover {
         right: 3vw;
         left: auto;
         top: 5vw;
-        border-radius: 0 0 2vw 0;
+        border-radius:2vw;
         font-size: 4vw;
+        padding: 6vw 2vw;
+        min-height: 12vw;
+        position: fixed;
+        z-index: 4;
+        box-sizing: border-box;
+    }
+    .desktop #bottom-box {
+        width: 50vw;   
+        height: 7vh;     
+        right: 3vw;
+        left: auto;
+        bottom: 10vw;
+        border-radius: 2vw;
+        font-size: 3vw;
         padding: 6vw 2vw;
         min-height: 12vw;
         position: fixed;
@@ -563,7 +610,7 @@ button:hover {
     #mypc #app-header span {
         left: 4vw;
         font-size: 4vw;
-        font-family: "Gilroy1";
+        font-family: "Helvatica";
     }
     #mypc #app-header #cross {
         right: 2vw;
@@ -604,7 +651,7 @@ button:hover {
     #browser #browser-header span {
         left: 4vw;
         font-size: 4vw;
-        font-family: "Gilroy1";
+        font-family: "Helvatica";
     }
     #browser #browser-header #browser-cross {
         right: 2vw;
@@ -669,7 +716,7 @@ button:hover {
     #calc-header span {
         left: 4vw;
         font-size: 4vw;
-        font-family: "Gilroy1";
+        font-family: "Helvatica";
     }
     #calc-cross {
         right: 2vw;
@@ -704,5 +751,3 @@ button:hover {
         border-radius: 50%;
     }
 }
-
-
