@@ -9,11 +9,11 @@ html, body {
 }
 @font-face {
     font-family: "Gilroy";
-    src: url(../Fonts/Gilroy/Gilroy-Medium.ttf) format('truetype');
+    src: url(Fonts/Gilroy-Medium.ttf) format('truetype');
 }  
 @font-face {
     font-family: "Helvatica";
-    src: url(../Fonts/Helvatica/Helvetica.ttf) format('truetype');
+    src: url(Fonts/Helvetica.ttf) format('truetype');
 }  
 /* Browser Window */
 #browser-window {
@@ -751,3 +751,4 @@ button:hover {
         border-radius: 50%;
     }
 }
+
