@@ -24,7 +24,7 @@
 
 ## 🚀 Demo
 
-<img src="img/demo1.png" alt="Demo Screenshot" width="100%"/>
+<img src="img/image.png" alt="Demo Screenshot" width="100%"/>
 
 ---
 
