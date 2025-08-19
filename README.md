@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/JavaScript-2nd%20Most%20Used-purple?style=for-the-badge" alt="Top Language"/>
   <img src="https://img.shields.io/github/last-commit/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" />
   <img src="https://img.shields.io/github/repo-size/Niloy-Avro/Basic-Browser-based-OS?color=orange&style=for-the-badge"/>
+<img src="https://img.shields.io/github/languages/code-size/Niloy-Avro/Basic-Browser-based-OS?style=for-the-badge" alt="Code Size">
 </p>
 
 ---
